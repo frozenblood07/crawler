@@ -11,10 +11,9 @@ var startTime = new Date().getTime();
 
 var counter = 0;
 
-arrUrl.push("https://medium.com,");
+arrUrl.push("https://medium.com");
 
-var finalHref = [];
-
+var finalHref = []; //final array containing all the urls
 
 function processRequest(maxConnections,callback) {
 	if(arrUrl.length == 0) {
@@ -85,7 +84,6 @@ var crawler = {
 		res.attachment('url.csv');
 		res.status(200).send(result);
 
-		res.send('Done...');
 				
 	}
 
