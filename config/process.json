@@ -1,0 +1,10 @@
+{
+  "script": "bin/www",
+  "instances": "max",
+  "exec_mode": "cluster",
+  "error_file": "err.log",
+  "out_file": "out.log",
+  "log_file": "combined-output.log",
+  "merge_logs": true,
+  "log_date_format" : "YYYY-MM-DD HH:mm:ss Z",
+}
