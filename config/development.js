@@ -76,31 +76,17 @@ var config = {
 
   },
   connection: {
-    redis: {
-      host: '127.0.0.1',
-      port: 6379,
-      password: ''
-    },
   },
   database: {
-    DBType: 'mysql',
-    MYSQLDBHostname: '127.0.0.1',
-    MYSQLDBUsername: 'root',
-    MYSQLDBPassword: '',
-    MYSQLDBReadHostname: '127.0.0.1',
-    MYSQLDBReadUsername: 'root',
-    MYSQLDBReadPassword: '',
-    MYSQLDBName: 'bse'
   },
   constants: {
-    maxConnectionSequelize: 10,
-    minConnectionsSequelize: 0,
-    idleTimeSequelize: 10000,
+    maxConnections: 5
   },
   redisKeys: {
   },
   response: {
-  }
+  },
+  
 };
 
 module.exports = config;

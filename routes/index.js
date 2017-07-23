@@ -8,6 +8,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/crawl',crawler.crawl)
+router.get('/crawl',crawler.crawl,crawler.generateCSV)
 
 module.exports = router;
