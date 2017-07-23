@@ -1,1 +1,5 @@
 node_modules
+combined-output.log
+err.log
+logs/
+out.log
